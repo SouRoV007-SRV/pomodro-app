@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&family=Rubik:wght@500&display=swap");
+body {
+  font-family: "Kanit", sans-serif;
+
+  text-align: center;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.pomodoro-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.timer {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+label {
+  font-family: "Kanit", sans-serif;
+  font-size: 16px;
+  margin-right: 10px;
+}
+label[for="work-duration"] {
+  position: relative;
+  right: 4vw;
+}
+
+#work-duration {
+  font-family: "Kanit", sans-serif;
+  position: relative;
+  right: 1vw;
+  width: 8vh;
+}
+#break-duration {
+  font-family: "Kanit", sans-serif;
+  position: relative;
+  left: 2.7vw;
+  width: 4vw;
+  height: 3vh;
+}
+input[type="number"] {
+  font-family: "Kanit", sans-serif;
+
+  width: 50px;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#start-button {
+  position: relative;
+  top: 8vh;
+  right: 16vw;
+}
+#reset-button {
+  position: relative;
+  bottom: 1vh;
+  left: 5vw;
+}
+button {
+  font-family: "Kanit", sans-serif;
+
+  padding: 10px 30px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #044c99;
+}
+
+@media (max-width: 480px) {
+  .pomodoro-container {
+    max-width: 100%;
+  }
+}

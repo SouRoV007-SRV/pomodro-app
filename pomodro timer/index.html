@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="pomodoro-container">
+      <h1>Pomodoro Timer</h1>
+      <div class="timer">
+        <div class="time" id="timer-display">25:00</div>
+      </div>
+      <div class="controls">
+        <label for="work-duration">Work Duration (minutes):</label>
+        <input type="number" id="work-duration" value="25" />
+        <label for="break-duration">Break Duration (minutes):</label>
+        <input type="number" id="break-duration" value="5" />
+        <button id="start-button">Start</button>
+        <button id="reset-button">Reset</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
